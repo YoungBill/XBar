@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ct.douyu.xbar.navigationBarTransparent
-import com.ct.douyu.xbar.statusBarTransparent
+import com.ct.douyu.xbar.transparentNavigationBar
+import com.ct.douyu.xbar.transparentStatusBar
 
 /**
 Created by taochen on 2022/7/18.
@@ -17,9 +17,9 @@ class StatusBarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_status_bar)
 
-        statusBarTransparent(true)
+        transparentStatusBar(true)
 
-        navigationBarTransparent(false)
+        transparentNavigationBar(false)
     }
 
     companion object {
