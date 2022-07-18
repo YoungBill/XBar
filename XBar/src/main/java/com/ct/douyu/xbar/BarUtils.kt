@@ -68,9 +68,6 @@ private fun systemUiFlagWithStatusBar(statusBarLight: Boolean): Int {
             or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
             or View.SYSTEM_UI_FLAG_LAYOUT_STABLE)
     when {
-        Build.VERSION.SDK_INT >= Build.VERSION_CODES.O -> {
-            if (statusBarLight) flag = flag or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        }
         Build.VERSION.SDK_INT >= Build.VERSION_CODES.M -> {
             if (statusBarLight) flag = flag or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
